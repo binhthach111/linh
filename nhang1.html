@@ -1,0 +1,511 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Nhang trầm sạch</title>
+</head>
+<link rel="stylesheet" href="nhangsach.css">
+<link rel="stylesheet" href="slider.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/popper.min.js"></script>
+<style>
+#bvsk{
+    background: #E0F0E5;
+    height: 900px;
+    text-align: center;
+    position: relative;
+}
+#phanchu {
+    position: absolute;
+    left: 25%;
+    top: 5%;
+}
+#phanchu2 {
+    position: absolute;
+    left: 40%;
+    top: 92%;
+}
+#mauchu1{
+    color: #3AB54A;
+    font-size: 26px;
+    font-weight: bold;
+    border-bottom: solid 3px;
+}
+#mauchu2{
+    color: #3AB54A;
+    font-size: 20px;
+}
+#dong3{
+    top: 30%;
+    width: 86%;
+    position: relative;
+    left: 7%;
+    right: 7%;
+    height: 300px;
+    text-align: center;
+
+
+}
+#dong{
+    top: 25%;
+    width: 86%;
+    position: relative;
+    left: 7%;
+    right: 7%;
+    height: 300px;
+    text-align: center;
+
+
+}
+#cot5{
+    position: absolute;
+    left: 1%;
+    width: 23.8%;
+    height: 65%;
+    background: #24A5D3;
+    border-radius: 3%;
+
+
+}
+#cot6{
+    position: absolute;
+    left: 26%;
+    height: 65%;
+    width: 23.8%;
+    background: #B0D247;
+    border-radius: 3%;
+
+}
+#cot7{
+    position: absolute;
+    left: 51%;
+    height: 65%;
+    width: 23.8%;
+    background: #F89A1D;
+    border-radius: 3%;
+
+}
+#cot8{
+    position: absolute;
+    left: 76%;
+    height: 65%;
+    width: 23.8%;
+    background: #E52F2F;
+    border-radius: 3%;
+
+}
+#maunhang1{
+    color: #ffffff;
+    font-size: 20px;
+}
+#maugia1{
+    color: #ffffff;
+    font-size: 44px;
+}
+#daili{
+    position: relative;
+    height: 400px;
+    clear: all;
+    top: 300px;
+
+}
+#daisu{
+    position: absolute;
+    top: 10%;
+    text-align: center;
+    color: #3AB54A;
+    font-size: 26px;
+    left: 41%;
+    font-weight: bold;
+    text-decoration: underline;
+
+
+}
+#cot9{
+    position: absolute;
+    left: 10%;
+    height: 55%;
+    width: 26.8%;
+    background: #B0D247;
+    top: 20%;
+    background-image: url(image/nhangxanh.png);
+
+}
+#cot10{
+    position: absolute;
+    left: 36.9%;
+    height: 55%;
+    width: 26.8%;
+    background: #F89A1D;
+    top: 20%;
+    background-image: url(image/mocvantho.png);
+
+}
+#cot11{
+    position: absolute;
+    left: 63.8%;
+    height: 55%;
+    width: 26.8%;
+    background: #E52F2F;
+    top: 20%;
+
+}
+#anh2{
+    position: absolute;
+    overflow: hidden;
+}
+
+</style>
+<body>
+            <div class="phantren">
+                <div id="phandau">
+                    <a id="logo" href="#" > <img src="image/nhang1.JPG"></a>
+                    <a id="phone"><img src="image/phone.jpg"></a>
+                    <a href="#" id="logo1">Tư vấn hỗ trợ quý &nbsp;&nbsp;&nbsp;&nbsp;<br> khách hàng <br> 24/7</a>
+                    <a href="#" id="logo2">18002079 &nbsp;<br> 0975888549</a>
+                    <input id="input" type="text" value placeholder="Tìm sản phẩm"  />
+                    <button id="submit" type="submit" <i class="fas fa-search"></i></button>
+                    <
+                </div>
+                    <div id="menu">
+                        <ul>
+                            <li><a href="#" class="doimau">&nbsp; TRANG CHỦ &nbsp;</a></li>
+                            <li><a>&nbsp; GIỚI THIỆU &nbsp;</a></li>
+                            <li><a>&nbsp; NHANG TRẦM SẠCH &nbsp;<i class="fas fa-angle-down"></i></a>
+                                <ul class="submenu">
+                                    <li><a><img src="image/nhang-xanh-30cm-chan-tam-do-001-500x500.jpg" width="100%" height="100%"><br> Nhang Xanh<br> Giá từ 25.000đ</a></li>
+                                    <li><a><img src="image/nhang_moc_tai_loc_600x600_2.jpg"width="100%" height="100%"><br>Nhang Mộc Thần Tài<br> Giá từ 15.000đ</a></li>
+                                    <li><a><img src="image/phu_quy_600x600_1.jpg"width="100%" height="100%"><br>Nhang Phú Quý<br> Giá từ 30.000đ</a></li>
+                                    <li><a><img src="image/tam_duc_600x600_1.jpg"width="100%" height="100%"><br>Nhang Tâm Đức<br> Giá từ 150.000đ</a></li>
+                                    <li><a><img src="image/thinh_vuong_600x600_4.jpg"width="100%" height="100%"><br>Nhang Thịnh Vượng<br> Giá từ 300.000đ</a></li>
+                                </ul>
+                            </li>
+                            <li><a>&nbsp; NHANG KHÔNG TĂM &nbsp;</a></li>
+                            <li><a>&nbsp; NHANG THẢO MỘC &nbsp;</a></li>
+                            <li><a>&nbsp; TRÀ THẢO MỘC &nbsp;<i class="fas fa-angle-down"></i></a>
+                                <ul id="submenu1">
+                                    <li><a href="#">&nbsp;&nbsp;<i class="fas fa-angle-right"></i>&nbsp;&nbsp;Nhang Trầm Thảo Mộc</a></li>
+                                    <li><a href="#">&nbsp;&nbsp;<i class="fas fa-angle-right"></i>&nbsp;&nbsp;Nhang Đinh Lăng</a></li>
+                                    <li><a href="#">&nbsp;&nbsp;<i class="fas fa-angle-right"></i>&nbsp;&nbsp;Nhang Vạn Thọ</a></li>
+                                    <li><a href="#">&nbsp;&nbsp;<i class="fas fa-angle-right"></i>&nbsp;&nbsp;Nhang Khuynh Diệp</a></li>
+                                    <li><a href="#">&nbsp;&nbsp;<i class="fas fa-angle-right"></i>&nbsp;&nbsp;Nhang Quế Xanh</a></li>
+                                </ul>
+                            </li>
+                            <li><a>&nbsp; ĐẠI LÝ &nbsp;<i class="fas fa-angle-down"></i></a>
+                                <ul id="submenu1">
+                                    <li><a href="#">&nbsp;&nbsp;<i class="fas fa-angle-right">&nbsp;&nbsp;</i>Đăng Ký Đại Lý Nhang Mộc</a></li>
+                                    <li><a href="#">&nbsp;&nbsp;<i class="fas fa-angle-right">&nbsp;&nbsp;</i>Đăng Ký Làm Cộng Tác Viên</a></li>
+                                </ul>
+                            </li>
+                            <li><a>&nbsp; TIN TỨC &nbsp;<i class="fas fa-angle-down"></i></a>
+                                <ul id="submenu1">
+                                    <li><a href="#">&nbsp;&nbsp;<i class="fas fa-angle-right">&nbsp;&nbsp;</i>Hương Nhang Và Phong Tục</a></li>
+                                    <li><a href="#">&nbsp;&nbsp;<i class="fas fa-angle-right">&nbsp;&nbsp;</i>Khuyến Mãi</a></li>
+                                    <li><a href="#">&nbsp;&nbsp;<i class="fas fa-angle-right">&nbsp;&nbsp;</i>Thiện Nguyện</a></li>
+                                    <li><a href="#">&nbsp;&nbsp;<i class="fas fa-angle-right">&nbsp;&nbsp;</i>Nhang Sạch</a></li>
+                                    <li><a href="#">&nbsp;&nbsp;<i class="fas fa-angle-right">&nbsp;&nbsp;</i>Nhang Hóa Chất</a></li>
+                                </ul>
+                            </li>
+                            <li><a>&nbsp; LIÊN HỆ &nbsp;</a></li>
+                        </ul>
+<!--phantren-->     </div>
+  <!-- slider -->
+                <div id="tongquanslider" class="tongquan">
+                    <div id="sld" class="slideshow-container">
+                      <div class="mySlides fade">
+                        <div class="numbertext"></div>
+                        <img src="image/1.jpg" style="width:100%">
+                        <div id="op" class="text">NHANG TRẦM XANH SẠCH 100% TỪ THIÊN NHIÊN</div>
+                      </div>
+                      <div class="mySlides fade">
+                        <div class="numbertext"></div>
+                        <img src="image/2.jpg" style="width:100%">
+                        <div id="op" class="text">SỬ DỤNG NHANG SẠCH TỐT CHO CẢ GIA ĐÌNH</div>
+                      </div>
+                      <div class="mySlides fade">
+                        <div class="numbertext"></div>
+                        <img src="image/3.jpg" style="width:100%">
+                        <div id="op" class="text">CẦU TÀI LỘC DÙNG NHANG MỘC TÀI LỘC</div>
+                      </div>
+                      <div class="mySlides fade">
+                        <div class="numbertext"></div>
+                        <img src="image/4.jpg" style="width:100%">
+                        <div id="op" class="text">KHÔNG HÓA CHẤT ĐỘC HẠI, KHÔNG HƯƠNG LIỆU, 100% TỪ THIÊN NHIÊN</div>
+                      </div>
+                      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                    </div>
+
+                    <div id="slider-r" class="cotnho" >
+                        <a href="#" id="slider-r1">Nhang Trầm Sạch</a><br><br>
+                        <a href="#" id="slider-r2"><b>Nhang Mộc</b> là nhà sản xuất và cung cấp Nhang Trầm Thượng Hạng cho người tiêu dùng trong và ngoài nước. <b>Nhang Mộc</b> tự hào mang đến cho bạn một giải pháp thực sự về một dòng “Nhang Sạch” không những chất lượng cao với hương thơm nhẹ nhàng, êm dịu, mà còn đem lại rất nhiều lợi ích cho sức khỏe người tiêu dùng.</a><br><br>
+                    
+                    <div id="slider-rr">
+                        <a href="#" id="slider-r3">Nguyên liệu tự nhiên</a><br><br>
+                        
+                        <a href="#" id="slider-r5">Sản phẩm của Nhang Mộc được làm từ 100% trầm hương tự nhiên. Nguyên liệu được tuyển chọn những cây trầm có điều kiện và sức khỏe tốt nhất. Đảm bảo cho ra những sản phẩm với chất lượng cao nhất.</a><br><br><br>
+                        
+                        <a href="#" id="slider-r7">Quy trình sản xuất tiên tiến</a><br><br>
+                        <a href="#" id="slider-r9"><b>Nhang Mộc</b> phát triển quy trình sản xuất dựa trên những công nghệ khoa học – kỹ thuật tiên tiến. <b>Nhang Mộc</b> tự tin sản phẩm của mình có thể làm hài lòng tất cả tầng lớp người tiêu dùng. </a><br><br>
+                    </div>
+                    <div id="slider-rrr">
+                        <a href="#" id="slider-r4">Chất lượng hàng đầu</a><br><br>
+                        <a href="#" id="slider-r6">Sản phẩm được <b>Nhang Mộc</b> tạo ra, trước khi để đến tay người tiêu dùng đều được trải qua quá trình thẩm định và kiểm định chuyên nghiệp từ độ mùi, trọng lượng, chất lượng bột nhang, tăm nhang cho đến bao bì. </a><br><br><br>
+                        
+                        
+                        
+                        <a href="#" id="slider-r8">cam kết</a><br><br>
+                        <a href="#" id="slider-r10">Không cay mắt không xộc mũi. Không hóa chất, không hương liệu độc hại.Thích hợp phòng kín máy lạnh, chung cư, văn phòng. Tốt cho sức khỏe cả gia đình nhất là bà bầu và trẻ em. </a><br><br>
+                    </div>
+                    </div>
+                </div>
+
+                    <script>
+                        var slideIndex = 1;
+                        showSlides(slideIndex);
+                        function plusSlides(n) {
+                          showSlides(slideIndex += n);
+                        }
+                        function currentSlide(n) {
+                          showSlides(slideIndex = n);
+                        }
+
+                        function showSlides(n) {
+                          var i;
+                          var slides = document.getElementsByClassName("mySlides");
+                          var dots = document.getElementsByClassName("dot");
+                          if (n > slides.length) {slideIndex = 1} 
+                          if (n < 1) {slideIndex = slides.length}
+                          for (i = 0; i < slides.length; i++) {
+                              slides[i].style.display = "none"; 
+                          }
+                          for (i = 0; i < dots.length; i++) {
+                              dots[i].className = dots[i].className.replace(" active", "");
+                          }
+                          slides[slideIndex-1].style.display = "block"; 
+                          dots[slideIndex-1].className += " active";
+                        } 
+                        var slideIndex = 0;
+                        showSlides();
+
+                        function showSlides() {
+                          var i;
+                          var slides = document.getElementsByClassName("mySlides");
+                          for (i = 0; i < slides.length; i++) {
+                            slides[i].style.display = "none"; 
+                          }
+                          slideIndex++;
+                          if (slideIndex > slides.length) {slideIndex = 1} 
+                          slides[slideIndex-1].style.display = "block"; 
+                          setTimeout(showSlides, 5000);
+                        } 
+                    </script>
+            </div>
+<!--phan san pham noi bat-->
+                <div id="sanphamnoibat" class="sanphamnb">
+                    <a href="#">Sản phẩm nổi bật</a>
+                </div>
+            <div id="dong1"> 
+
+                <div id="cot1"> 
+                    <div id="anh">
+                        <img src="image/mocvantho.png">
+                    
+                    </div>
+                    <a id="maunhang">Nhang mộc vạn thọ</a><br>
+                    <a id="maugia">160.000 đ</a>
+                    
+                </div>
+                <div id="cot2"> 
+                    <div id="anh">
+                        <img src="image/moctailoc.png">
+                    
+                    </div>
+                    <a id="maunhang">Nhang mộc tài lộc</a><br>
+                    <a id="maugia">15.000 đ</a>
+                    
+                </div>
+                <div id="cot3"> 
+                    <div id="anh">
+                        <img src="image/mocphuquy.png">
+                    
+                    </div>
+                    <a id="maunhang">Nhang mộc phú quý</a><br>
+                    <a id="maugia">30.000 đ</a>
+                    
+                </div>
+                <div id="cot4"> 
+                    <div id="anh">
+                        <img src="image/moctamduc.png">
+                    
+                    </div>
+                    <a id="maunhang">Nhang mộc tâm đức</a><br>
+                    <a id="maugia">150.000 đ</a>
+                    
+                </div>
+            </div>
+            <div id="dong1"> 
+
+                <div id="cot1"> 
+                    <div id="anh">
+                        <img src="image/mocthinhvuong.png">
+                    
+                    </div>
+                    <a id="maunhang">Nhang mộc thịnh vượng</a><br>
+                    <a id="maugia">300.000 đ</a>
+                    
+                </div>
+                <div id="cot2"> 
+                    <div id="anh">
+                        <img src="image/nhangxanh.png">
+                    
+                    </div>
+                    <a id="maunhang">Nhang xanh</a><br>
+                    <a id="maugia">25.000 đ</a>
+                    
+                </div>
+                <div id="cot3"> 
+                    <div id="anh">
+                        <img src="image/nhangxanhcc.png">
+                    
+                    </div>
+                    <a id="maunhang">Nhang xanh cao cấp</a><br>
+                    <a id="maugia">50.000 đ</a>
+                    
+                </div>
+                <div id="cot4"> 
+                    <div id="anh">
+                        <img src="image/mocdinhlang.png">
+                    
+                    </div>
+                    <a id="maunhang">Nhang mộc đinh lăng</a><br>
+                    <a id="maugia">170.000 đ</a>
+                    
+                </div>
+            </div>
+<!--phan bao ve suc khoe-->
+            <div id="bvsk">
+                <div id="phanchu">
+                    <a id="mauchu1">HÃY BẢO VỆ SỨC KHỎE GIA ĐÌNH</a><br><br><br>
+                    <a id="mauchu2">Hãy sử dụng Hương Nhang Sạch để bảo vệ sức khỏe cho cả gia đình, đặc biệt nhà có phụ<br> nữ mang thao và trẻ nhỏ. Nhang Trầm Sạch thích hợp cho chung cư, phòng kín, máy lạnh.<br> Không cay mắt xộc mũi, Không hóa chất, không hương liệu độc hại.</a>
+                </div>
+                <div id="dong3"> 
+
+                <div id="cot5"> 
+                    <div id="anh1">
+                        
+                    
+                    </div>
+                    <a id="maugia1">1287</a><br><br>
+                    <a id="maunhang1">Đơn hàng đã bán</a><br>
+                    
+                    
+                </div>
+                <div id="cot6"> 
+                    <div id="anh1">
+                        
+                    
+                    </div>
+                    <a id="maugia1">55819</a><br><br>
+                    <a id="maunhang1">sản phẩm đã bán</a><br>
+                    
+                    
+                </div>
+                <div id="cot7"> 
+                    <div id="anh1">
+                        
+                    
+                    </div>
+                    <a id="maugia1">13</a><br><br>
+                    <a id="maunhang1">lượt truy cập hôm nay</a><br>
+                    
+                    
+                </div>
+                <div id="cot8"> 
+                    <div id="anh1">
+                        
+                    
+                    </div>
+                    <a id="maugia1">1817</a><br><br>
+                    <a id="maunhang1">lượt truy cập tháng này</a><br>
+                    
+                    
+                </div>
+            </div>
+            <div id="dong"> 
+
+                <div id="cot1"> 
+                    <div id="anh">
+                        <img src="image/mocthinhvuong.png">
+                    
+                    </div>
+                    <a id="maunhang">Nhang mộc thịnh vượng</a><br>
+                    <a id="maugia">300.000 đ</a>
+                    
+                </div>
+                <div id="cot2"> 
+                    <div id="anh">
+                        <img src="image/nhangxanh.png">
+                    
+                    </div>
+                    <a id="maunhang">Nhang xanh</a><br>
+                    <a id="maugia">25.000 đ</a>
+                    
+                </div>
+                <div id="cot3"> 
+                    <div id="anh">
+                        <img src="image/nhangxanhcc.png">
+                    
+                    </div>
+                    <a id="maunhang">Nhang xanh cao cấp</a><br>
+                    <a id="maugia">50.000 đ</a>
+                    
+                </div>
+                <div id="cot4"> 
+                    <div id="anh">
+                        <img src="image/mocdinhlang.png">
+                    
+                    </div>
+                    <a id="maunhang">Nhang mộc đinh lăng</a><br>
+                    <a id="maugia">170.000 đ</a>
+                    
+                </div>
+            </div>
+                <div id="phanchu2">
+                    <a id="mauchu1">ĐÁNH GIÁ KHÁCH HÀNG</a><br><br><br>
+                </div>
+            <div id="phanduoi">
+                <div id="daili">
+                    <div>
+                        <a id="daisu">ĐẠI SỨ NHANG SẠCH</a>
+
+                    </div>
+                    <div id="cot9">
+                        <div id="anh2">
+                        </div>
+                        <a >LIÊN HỆ NHANG.VN</a>
+                        <a id="">Mọi thắc mắc quý khách vui lòng liên hệ nhang.vn để được giải đáp hoặc liên hệ 0975 888 549</a>
+                        
+                    </div>
+                    <div id="cot10">
+                        <div id="anh3">
+                            
+                        </div>
+                        <a >ĐĂNG KÝ LÀM ĐẠI LÝ</a>
+                        <a id="">Trở thành đại lý chính thức của thương hiệu uy tín hàng đầu về nhang sạch. Hưởng mức chiết khấu hợp lý và nhiều ưu đãi cho đại lý thân thiết. Thủ tục mở đại lý đơn giản nhanh chóng</a>
+                    </div>
+                    <div id="cot11">
+                        <div id="anh4">
+                            
+                        </div>
+                        <a >ĐĂNG KÝ LÀM CTV</a>
+                        
+                    </div>
+                </div>
+            </div>
+                
+                
+
+</body>
+</html>
